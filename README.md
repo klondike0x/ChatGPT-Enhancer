@@ -25,9 +25,7 @@
 ## Установка
 
 1. Установите [Tampermonkey](https://www.tampermonkey.net/) для вашего браузера.  
-2. Скачайте файл скрипта `chatgpt-enhancer.user.js`.  
-3. В Tampermonkey выберите **«Добавить новый скрипт» → Импорт** и выберите скачанный файл.  
-4. Включите скрипт и перезагрузите страницу [https://chat.openai.com](https://chat.openai.com).  
+2. [Установить скрипт через Tampermonkey](https://github.com/klondike0x/ChatGPT-Enhancer/releases/download/1.2/ChatGPT.Enhancer-1.2.user.js).
 
 Теперь кнопка «Отправить» будет активной, лишние элементы удалены, и Enter отправляет сообщение.
 
