@@ -1,6 +1,6 @@
 # ChatGPT Enhancer
 
-### [Русский](https://github.com/klondike0x/ChatGPT-Enhancer/blob/main/README.md) | [English]
+### Русский | [English](https://github.com/klondike0x/ChatGPT-Enhancer/blob/main/README_EN.md)
 
 **ChatGPT Enhancer** — пользовательский скрипт для Tampermonkey, который улучшает взаимодействие с интерфейсом ChatGPT.
 
