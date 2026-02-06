@@ -5,6 +5,7 @@
 // @description  Всегда активирует кнопку "Отправить в чат" на ChatGPT. Если закончился лимит сообщение, он продложит отправлять
 // @author       klondike0x
 // @match        https://chatgpt.com/*
+// @icon         https://raw.githubusercontent.com/username/ChatGPT-Enhancer/main/canvas.png
 // @grant        none
 // ==/UserScript==
 
