@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         ChatGPT Enhancer
+// @name         ChatGPT-Enhancer
 // @namespace    http://tampermonkey.net/
 // @version      1.5
 // @description  Всегда активирует кнопку "Отправить в чат" на ChatGPT. Если закончился лимит сообщение, он продложит отправлять
