@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         ChatGPT-Enhancer
 // @namespace    https://github.com/klondike0x/ChatGPT-Enhancer
-// @version      1.5.2
+// @version      1.5.3
 // @description  Всегда активирует кнопку "Отправить в чат" на ChatGPT. Если закончился лимит сообщение, он продложит отправлять
 // @author       klondike0x
-// @match        https://chatgpt.com/*
+// @match        *://chatgpt.com/*
 // @icon         https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/canvas.png
 // @updateURL    https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/ChatGPT-Enhancer.js
 // @downloadURL  https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/ChatGPT-Enhancer.js
