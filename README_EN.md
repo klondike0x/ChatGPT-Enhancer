@@ -1,5 +1,7 @@
 # ChatGPT Enhancer
 
+### [Русский](README.md) | English
+
 **ChatGPT Enhancer** is a Tampermonkey userscript that improves the interaction with the ChatGPT interface.
 
 ---
