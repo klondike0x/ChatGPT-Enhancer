@@ -11,7 +11,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     // Функция для включения кнопки
@@ -44,25 +44,25 @@
     }
 
     function replaceChatGPTLabels() {
-    const TARGET = 'ChatGPT';
-    const REPLACEMENT = 'ChatGPT Unlimited 1.5.5';
+        const TARGET = 'ChatGPT';
+        const REPLACEMENT = 'ChatGPT Unlimited 1.5.5';
 
-    // 1. Header (кнопка модели)
-    document.querySelectorAll('header button div').forEach(el => {
-        if (el.textContent.trim() === TARGET && !el.dataset.unlimited) {
-            el.textContent = REPLACEMENT;
-            el.dataset.unlimited = 'true';
-        }
-    });
+        // 1. Header (кнопка модели)
+        document.querySelectorAll('header button div').forEach(el => {
+            if (el.textContent.trim() === TARGET && !el.dataset.unlimited) {
+                el.textContent = REPLACEMENT;
+                el.dataset.unlimited = 'true';
+            }
+        });
 
-    // 2. Dropdown (меню моделей)
-    document.querySelectorAll('[role="menu"] span, [role="menu"] div').forEach(el => {
-        if (el.textContent.trim() === TARGET && !el.dataset.unlimited) {
-            el.textContent = REPLACEMENT;
-            el.dataset.unlimited = 'true';
-        }
-    });
-}
+        // 2. Dropdown (меню моделей)
+        document.querySelectorAll('[role="menu"] span, [role="menu"] div').forEach(el => {
+            if (el.textContent.trim() === TARGET && !el.dataset.unlimited) {
+                el.textContent = REPLACEMENT;
+                el.dataset.unlimited = 'true';
+            }
+        });
+    }
 
     // Наблюдатель за DOM
     const observer = new MutationObserver(() => {
