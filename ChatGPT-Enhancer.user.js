@@ -43,6 +43,27 @@
         });
     }
 
+    function replaceChatGPTLabels() {
+    const TARGET = 'ChatGPT';
+    const REPLACEMENT = 'ChatGPT Unlimited';
+
+    // 1. Header (кнопка модели)
+    document.querySelectorAll('header button div').forEach(el => {
+        if (el.textContent.trim() === TARGET && !el.dataset.unlimited) {
+            el.textContent = REPLACEMENT;
+            el.dataset.unlimited = 'true';
+        }
+    });
+
+    // 2. Dropdown (меню моделей)
+    document.querySelectorAll('[role="menu"] span, [role="menu"] div').forEach(el => {
+        if (el.textContent.trim() === TARGET && !el.dataset.unlimited) {
+            el.textContent = REPLACEMENT;
+            el.dataset.unlimited = 'true';
+        }
+    });
+}
+
     // Наблюдатель за DOM
     const observer = new MutationObserver(() => {
         // Активируем кнопку
@@ -51,26 +72,6 @@
 
         // Удаляем div
         removeDiv();
-    });
-
-    // --- ADD "ChatGPT Unlimited" LABEL --- //
-    const labelObserver = new MutationObserver(() => {
-        const divs = document.querySelectorAll('div');
-        for (const div of divs) {
-            if (div.textContent.trim() === 'ChatGPT' && !div.dataset.unlimitedAdded) {
-                div.dataset.unlimitedAdded = 'true';
-
-                const label = document.createElement('div');
-                label.textContent = 'ChatGPT Unlimited';
-                label.style.fontSize = '11px';
-                label.style.fontWeight = '600';
-                label.style.color = '#22c55e';
-                label.style.marginTop = '3px';
-                label.style.userSelect = 'none';
-
-                div.appendChild(label);
-            }
-        }
     });
 
     observer.observe(document.body, {
