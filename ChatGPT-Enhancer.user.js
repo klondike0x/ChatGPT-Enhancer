@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         ChatGPT-Enhancer
 // @namespace    https://github.com/klondike0x/ChatGPT-Enhancer
-// @version      1.5.4
+// @version      1.5.5
 // @description  Убирает лимит сообщение в ChatGPT
 // @author       klondike0x
 // @match        *://chatgpt.com/*
 // @icon         https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/canvas.png
-// @updateURL    https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/ChatGPT-Enhancer.js
-// @downloadURL  https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/ChatGPT-Enhancer.js
+// @updateURL    https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/main/ChatGPT-Enhancer.user.js
+// @downloadURL  https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/main/ChatGPT-Enhancer.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -45,7 +45,7 @@
 
     function replaceChatGPTLabels() {
     const TARGET = 'ChatGPT';
-    const REPLACEMENT = 'ChatGPT Unlimited 1.5.4';
+    const REPLACEMENT = 'ChatGPT Unlimited 1.5.5';
 
     // 1. Header (кнопка модели)
     document.querySelectorAll('header button div').forEach(el => {
