@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ChatGPT-Enhancer
 // @namespace    https://github.com/klondike0x/ChatGPT-Enhancer
-// @version      1.5.3
+// @version      1.5.4
 // @description  Всегда активирует кнопку "Отправить в чат" на ChatGPT. Если закончился лимит сообщение, он продложит отправлять
 // @author       klondike0x
 // @match        *://chatgpt.com/*
@@ -51,6 +51,26 @@
 
         // Удаляем div
         removeDiv();
+    });
+
+    // --- ADD "ChatGPT Unlimited" LABEL --- //
+    const labelObserver = new MutationObserver(() => {
+        const divs = document.querySelectorAll('div');
+        for (const div of divs) {
+            if (div.textContent.trim() === 'ChatGPT' && !div.dataset.unlimitedAdded) {
+                div.dataset.unlimitedAdded = 'true';
+
+                const label = document.createElement('div');
+                label.textContent = 'ChatGPT Unlimited';
+                label.style.fontSize = '11px';
+                label.style.fontWeight = '600';
+                label.style.color = '#22c55e';
+                label.style.marginTop = '3px';
+                label.style.userSelect = 'none';
+
+                div.appendChild(label);
+            }
+        }
     });
 
     observer.observe(document.body, {
