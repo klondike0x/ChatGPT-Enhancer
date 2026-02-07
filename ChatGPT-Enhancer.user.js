@@ -2,7 +2,7 @@
 // @name         ChatGPT-Enhancer
 // @namespace    https://github.com/klondike0x/ChatGPT-Enhancer
 // @version      1.5.4
-// @description  Всегда активирует кнопку "Отправить в чат" на ChatGPT. Если закончился лимит сообщение, он продложит отправлять
+// @description  Убирает лимит сообщение в ChatGPT
 // @author       klondike0x
 // @match        *://chatgpt.com/*
 // @icon         https://raw.githubusercontent.com/klondike0x/ChatGPT-Enhancer/refs/heads/main/canvas.png
