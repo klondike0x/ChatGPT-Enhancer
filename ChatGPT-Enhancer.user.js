@@ -45,7 +45,7 @@
 
     function replaceChatGPTLabels() {
     const TARGET = 'ChatGPT';
-    const REPLACEMENT = 'ChatGPT Unlimited';
+    const REPLACEMENT = 'ChatGPT Unlimited 1.5.4';
 
     // 1. Header (кнопка модели)
     document.querySelectorAll('header button div').forEach(el => {
@@ -72,6 +72,9 @@
 
         // Удаляем div
         removeDiv();
+
+        // Изменяем ChatGPT на ChatGPT Unlimited
+        replaceChatGPTLabels();
     });
 
     observer.observe(document.body, {
